@@ -7,7 +7,7 @@ capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 while True:
     ret, frame = capture.read()
     if not ret:
-        break
+        break 
 
     results = model(frame, verbose=False)[0]
 
